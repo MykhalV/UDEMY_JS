@@ -21,16 +21,68 @@ let a = prompt("Name of the last movie that you saw", ""),
 personalMovieDB.movies[a] = b;
 personalMovieDB.movies[c] = d;
 
+
+for (let i = 0; i < 2; i++) {
+    const a = prompt("Name of the last movie that you saw", ""),
+          b = +prompt("Make a rating from 1 to 10", "");
+
+    if (a != null && b != null && a != '' && b != '' && a.length < 50) {
+        personalMovieDB.movies[a] = b;
+        console.log('done');
+    } else {
+        console.log('error');
+        i--;
+    }
+}
+
+if (personalMovieDB.count < 10) {
+    console.log("Просмотрено довольно мало фильмов");
+} else if (personalMovieDB.count >= 10 && personalMovieDB.count < 30) {
+    console.log("Вы классический зритель");
+} else if (personalMovieDB.count >= 30) {
+    console.log("Вы киноман");
+} else {
+    console.log("Произошла ошибка");
+}
+
+
+
+
+
+
+
+
+
+
+
+
 console.log(personalMovieDB);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-if(4 == 9){
-    console.log("ok!");
-}else{
-    console.log("Error");
-}
+// if(4 == 9){
+//     console.log("ok!");
+// }else{
+//     console.log("Error");
+// }
 
 ////////////////////////////
 
@@ -45,21 +97,21 @@ if(4 == 9){
 
 // (num === 50) ? console.log("ok!") : console.log("Error!");
 // /////////////////////////////
-const num = 50;
-switch(num){
-    case 49:
-        console.log("Wrong");
-        break;
-    case 100:
-        console.log("Wrong");
-        break;
-    case 50:
-        console.log("True");
-        break;
-    default:
-        console.log("vse ploho");
-        break;
-}   
+// const num = 50;
+// switch(num){
+//     case 49:
+//         console.log("Wrong");
+//         break;
+//     case 100:
+//         console.log("Wrong");
+//         break;
+//     case 50:
+//         console.log("True");
+//         break;
+//     default:
+//         console.log("vse ploho");
+//         break;
+// }   
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 // let result = '';
@@ -75,47 +127,47 @@ switch(num){
 
 /////////////////////////////////////
 
-// 1
-for(let i = 5; i <= 10; i++){
-    console.log(i);
-}
+// // 1
+// for(let i = 5; i <= 10; i++){
+//     console.log(i);
+// }
 
 
-//2
-first: for(let i = 20; i > 10; i--){
-    if (i == 13){
-        break first; 
-    }
-    console.log(i);
-}
+// //2
+// first: for(let i = 20; i > 10; i--){
+//     if (i == 13){
+//         break first; 
+//     }
+//     console.log(i);
+// }
 
 
-//3
-for(let i = 2; i <= 10; i++){
-    if( i % 2 == 0){
-        console.log(i);
-    }
-}
+// //3
+// for(let i = 2; i <= 10; i++){
+//     if( i % 2 == 0){
+//         console.log(i);
+//     }
+// }
 
 
-//4
-let i = 2;
-while (i < 16){
-    i++;
-    if(i % 2 === 0){
-        continue;
-    }else{
-        console.log(i);
-    }
-}
+// //4
+// let i = 2;
+// while (i < 16){
+//     i++;
+//     if(i % 2 === 0){
+//         continue;
+//     }else{
+//         console.log(i);
+//     }
+// }
 
 
-//5 
-let numb = [];
-for(let i = 5; i <= 10; i++){
-    numb[i - 5] = i;
-    console.log(numb);
-}
+// //5 
+// let numb = [];
+// for(let i = 5; i <= 10; i++){
+//     numb[i - 5] = i;
+//     console.log(numb);
+// }
 
 ////////////////////////////////////////////////////////////////////////////
 
@@ -164,3 +216,4 @@ for(let i = 5; i <= 10; i++){
 //     result += "\n";
 // }
 // console.log(result);
+
