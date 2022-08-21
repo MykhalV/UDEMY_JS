@@ -60,3 +60,60 @@ switch(num){
         console.log("vse ploho");
         break;
 }   
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+let result = '';
+const lengthh = 7;
+
+for (let i = 1; i < lengthh; i++){
+    for(let j = 0; j < i; j++){
+        result += '*';
+    }
+    result += '\n';
+}
+console.log(result);
+
+/////////////////////////////////////
+
+// 1
+for(let i = 5; i <= 10; i++){
+    console.log(i);
+}
+
+
+//2
+first: for(let i = 20; i > 10; i--){
+    if (i == 13){
+        break first; 
+    }
+    console.log(i);
+}
+
+
+//3
+for(let i = 2; i <= 10; i++){
+    if( i % 2 == 0){
+        console.log(i);
+    }
+}
+
+
+//4
+let i = 2;
+while (i < 16){
+    i++;
+    if(i % 2 === 0){
+        continue;
+    }else{
+        console.log(i);
+    }
+}
+
+
+//5 
+let numb = [];
+for(let i = 5; i <= 10; i++){
+    numb[i - 5] = i;
+    console.log(numb);
+}
+
