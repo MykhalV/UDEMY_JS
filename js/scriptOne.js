@@ -1,3 +1,5 @@
+"use strict";
+
 const numberOfFilms = +prompt("How many movies you watched?", "");
 
 
@@ -20,3 +22,5 @@ personalMovieDB.movies[a] = b;
 personalMovieDB.movies[c] = d;
 
 console.log(personalMovieDB);
+
+// Test commit 1
